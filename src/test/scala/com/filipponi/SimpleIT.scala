@@ -14,6 +14,7 @@ import org.scalatest.{BeforeAndAfterAll, FlatSpec, Matchers}
 
 class SimpleIT extends FlatSpec with Matchers with BeforeAndAfterAll {
 
+  //todo can i not use a var?
   private var server : Server = _
   //with the server socket I can allocate a random port
   private val basePath = s"""http://localhost:${new ServerSocket(0).getLocalPort}"""
